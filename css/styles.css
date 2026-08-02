@@ -2295,6 +2295,12 @@ a {
   .dot.active {
     background: #003399;
   }
+
+  .why-hero-right model-viewer {
+  width: 250px;   /* più piccolo */
+  height: 250px;
+  margin-right: 50px; /* lo sposta ancora più a destra */
+}
 }
 
 /* -------------------------------------------------- */

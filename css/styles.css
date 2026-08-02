@@ -1805,21 +1805,6 @@ a {
   display: block;
 }
 
-.service-card h3 {
-  font-size: 20px;
-  font-weight: 800;
-  color: #003399;
-  margin-bottom: 8px;
-}
-
-.service-card p {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.6;
-  margin: 0;
-}
-
-
 .service-link {
   display: inline-block;
   margin: 0 20px 20px;
@@ -3097,7 +3082,7 @@ a {
 .service-card h3 {
   font-size: 20px;
   font-weight: 800;
-  color: #003399;
+  color: var(--blue-header);
   margin-bottom: 8px;
   margin-left: 20px;
 }

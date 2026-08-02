@@ -1481,13 +1481,11 @@ a {
     font-size: 27px;
     line-height: 1.2;
     text-align: left; /* ← AGGIUNTO */
-    margin-left: -20px;
   }
 
   .why-hero-left p {
     font-size: 16px;
     text-align: left; /* ← AGGIUNTO */
-    margin-left: -20px;
   }
 
   .why-hero-grid {

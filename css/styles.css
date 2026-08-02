@@ -3480,9 +3480,12 @@ a {
 .why-hero-right model-viewer {
   width: 250px;   /* più piccolo */
   height: 250px;
-  margin-right: 40px; /* lo sposta ancora più a destra */
+  margin-right: 80px; /* lo sposta ancora più a destra */
 }
 
+.why-hero-right model-viewer {
+  filter: drop-shadow(0 0 15px #10b981) drop-shadow(0 0 30px #34d399);
+}
 
 .why-hero-pro {
   position: relative;

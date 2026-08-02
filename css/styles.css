@@ -1478,11 +1478,11 @@ a {
 
  /* HERO */
   .why-hero-left {
-    padding-left: -30px; /* quasi attaccato al margine */
+    padding-left: -40px; /* quasi attaccato al margine */
   }
 
   .why-hero-left h1 {
-    font-size: 27px;
+    font-size: 22px;
     line-height: 1.2;
     text-align: left;
     margin-left: 0; /* elimina margini extra */

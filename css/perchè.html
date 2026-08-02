@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dr. Jaime Jones W. Porqué decidirnos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/Logo.png" alt="FEB Soluzioni Meccaniche" class="logo-img">
+      </a>
+    </div>
+
+     <nav class="header-actions">
+      <a href="index.html">HOME</a>
+      <a href="storia.html">SOBRE NOSOTROS</a>
+
+      <div class="nav-item-with-overlay">
+        <div class="nav-trigger">
+          <a href="#servizi">SERVICIOS</a>
+          <span class="nav-arrow"></span>
+        </div>
+
+        <div class="mega-overlay">
+          <ul>
+            <li><a href="compressori.html">Compressori</a></li>
+            <li><a href="pompe.html">Pompe</a></li>
+            <li><a href="riduttori.html">Riduttori</a></li>
+            <li><a href="valvole.html">Valvole</a></li>
+            <li><a href="turbine.html">Turbine</a></li>
+            <li><a href="ricambi.html">Ricambi macchinari industriali</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="perchè.html">PORQUÉ DECIDIR NOSOTROS</a>
+      <a href="index.html#CONTATTI" onclick="toggleMenu()">CONTACTO</a>
+
+    </nav>
+
+    <div class="lang-switcher">
+      <a href="index.html">
+        <img src="assets/es.avif" alt="Italiano" class="lang-flag">
+      </a>
+      <span class="lang-arrow"></span>
+      <div class="lang-dropdown">
+        <a href="indexEN.html">
+          <img src="assets/gb.png" alt="English" class="lang-flag">
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+
+</header>
+
+<!-- MENU MOBILE -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="mobile-menu-header">
+    <img src="assets/Logo.png" class="mobile-menu-logo" alt="FEB">
+  </div>
+
+  <ul class="mobile-menu-links">
+    <li><a href="index.html">HOME <span>›</span></a></li>
+    <li><a href="storia.html">SOBRE NOSOTROS <span>›</span></a></li>
+    
+    <li class="mobile-dropdown">
+      <div class="mobile-trigger">
+        SERVICIOS
+        <span class="mobile-arrow" data-lucide="chevron-down"></span>
+      </div>
+
+      <ul class="mobile-submenu">
+        <li><a href="compressori.html">Compressori</a></li>
+        <li><a href="pompe.html">Pompe</a></li>
+        <li><a href="riduttori.html">Riduttori</a></li>
+        <li><a href="valvole.html">Valvole</a></li>
+        <li><a href="turbine.html">Turbine</a></li>
+        <li><a href="ricambi.html">Ricambi</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="perchè.html">PORQUÉ DECIDIR NOSOTROS <span>›</span></a></li>
+    <li><a href="index.html#CONTATTI" onclick="toggleMenu()">CONTACTO<span>›</span></a></li>
+  </ul>
+</div>
+
+<section class="why-hero-pro">
+  <!-- Background canvas per animazioni -->
+  <canvas id="why-hero-canvas"></canvas>
+
+  <div class="why-hero-grid">
+    <div class="why-hero-left">
+      <h1>Porqué decidirnos</h1>
+      <p>Excelencia en odontología, cuidado personalizado y sonrisas duraderas.</p>
+    </div>
+
+    <div class="why-hero-right">
+      <!-- 3D Tooth Model -->
+<model-viewer src="assets/teeth.glb"
+              alt="3D Tooth"
+              auto-rotate
+              auto-rotate-delay="0"   
+              rotation-per-second="30deg" 
+              camera-controls
+              shadow-intensity="1"
+              style="width:250px; height:250px; background:transparent;">
+</model-viewer>
+
+    </div>
+  </div>
+</section>
+
+<!-- Import model-viewer library -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+<section class="why-cards">
+
+  <div class="why-card">
+    <i class="fas fa-cogs"></i>
+    <h3>Ingegneria Avanzata</h3>
+    <p>Ottimizziamo macchine rotanti e sistemi industriali con approccio ingegneristico certificato.</p>
+    <ul class="why-card-list">
+      <li>Analisi performance e vibrazioni</li>
+      <li>Revamping impianti e turbine</li>
+      <li>Progettazione ricambi su misura</li>
+    </ul>
+    <div class="why-kpi">+32% efficienza media</div>
+  </div>
+
+  <div class="why-card">
+    <i class="fas fa-bolt"></i>
+    <h3>Risposta Immediata</h3>
+    <p>Interveniamo rapidamente per garantire continuità operativa senza fermate impreviste.</p>
+    <ul class="why-card-list">
+      <li>Assistenza 24/7</li>
+      <li>Interventi urgenti on‑site</li>
+      <li>Tempi di risposta certificati</li>
+    </ul>
+    <div class="why-kpi">Intervento in 4h</div>
+  </div>
+
+  <div class="why-card">
+    <i class="fas fa-microscope"></i>
+    <h3>Tecnologie Digitali</h3>
+    <p>Strumentazione avanzata per diagnosi, misurazioni e manutenzione predittiva.</p>
+    <ul class="why-card-list">
+      <li>Laser alignment digitale</li>
+      <li>Analisi spettrometriche materiali</li>
+      <li>Bilanciatura rotori certificata</li>
+    </ul>
+    <div class="why-kpi">99,2% accuratezza</div>
+  </div>
+
+  <div class="why-card">
+    <i class="fas fa-headset"></i>
+    <h3>Assistenza Continua</h3>
+    <p>Assistenza continua in tutte le fasi, con monitoraggio costante per garantire stabilità produttiva.</p>
+
+    <ul class="why-card-list">
+      <li>Consulenza ingegneristica</li>
+      <li>Pacchetti manutentivi</li>
+      <li>Monitoraggio post-intervento</li>
+    </ul>
+    <div class="why-kpi">+1.200 clienti serviti</div>
+  </div>
+</section>
+
+<section class="why-cta-pro">
+  <a href="contatti.html" class="cta-pro-btn">
+    <i class="fas fa-envelope"></i> Richiedi informazioni
+  </a>
+</section>
+
+
+<div id="pageContent">
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <img src="assets/Footer.png" alt="FEB Soluzioni Meccaniche" class="footer-logo">
+
+      <p class="footer-copy">
+        © <span id="year"></span> FEB Soluzioni Meccaniche<br>
+        <span class="footer-tax desktop-only">P.IVA: 01418601009 – C.F.: 05590910583</span>
+        <span class="footer-tax mobile-only">P.IVA: 01418601009<br>C.F. 05590910583</span>
+      </p>
+    </div>
+
+    <a href="privacy/privacy.html" class="footer-privacy">Privacy & Cookie Policy</a>
+
+    <div class="footer-right">
+      <h4>CONTATTI</h4>
+
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        <strong>Sede Legale</strong><br>
+        <a href="https://www.google.it/maps/place/Via+Singen,+26,+00071+Pomezia+RM" target="_blank">
+          Via Singen 26/I/5 – Pomezia (RM)
+        </a>
+      </p>
+
+      <p>
+        <i class="fas fa-industry"></i>
+        <strong>Sede Amministrativa</strong><br>
+        <a href="https://www.google.com/maps?q=Str.+delle+Campore,+Terni+TR" target="_blank">
+          Str. delle Campore 12 – Terni (TR)
+        </a>
+      </p>
+
+      <p><i class="fas fa-phone"></i><a href="tel:+390744800179">+39 0744 800179</a></p>
+      <p><i class="fas fa-fax"></i><a href="tel:+390744814135">Fax +39 0744 814135</a></p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:febsrltr@pec.it">febsrltr@pec.it</a></p>
+
+    </div>
+
+  </div>
+</footer>
+
+</div>
+
+<!-- BOT FLOATING BUTTON -->
+<div id="fb-bot-button">
+  <i class="fas fa-robot"></i>
+</div>
+
+<!-- BOT WINDOW -->
+<div id="fb-bot-window">
+  <div id="fb-bot-header">
+  <span class="bot-title">F&B Assistant AI</span>
+  <i id="fb-reset" class="fas fa-rotate-right"></i>
+</div>
+
+  <div id="fb-bot-messages">
+    <div class="bot-msg">
+      <p>Ciao! Sono F&B Assistant AI, come posso aiutarti?</p>
+    </div>
+  </div>
+
+  <div id="fb-bot-input">
+    <input type="text" id="fb-user-input" placeholder="Scrivi qui il tuo messaggio...">
+    <button id="fb-send-btn">
+      <i data-lucide="send"></i>
+    </button>
+  </div>
+</div>
+
+<script src="js/appIT.js"></script>
+<script src="js/whyHeroAnimation.js"></script>
+
+</body>
+</html>

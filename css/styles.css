@@ -1489,7 +1489,7 @@ a {
 
   /* HERO */
 .why-hero-left h1 {
-    font-size: 32px;
+    font-size: 27px;
     line-height: 1.2;
     text-align: left; /* ← AGGIUNTO */
   }
@@ -3513,6 +3513,7 @@ a {
 @media (max-width: 800px) {
   .why-hero-right {
     justify-content: flex-start; /* su mobile → spinge a sinistra */
+    margin-left: -50px;
   }
 
   .why-hero-right model-viewer {

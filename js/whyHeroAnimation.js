@@ -128,7 +128,26 @@ function animate() {
     // ❌ niente più drawRotatingTooth()
     // toothAngle += 0.02;
 
+    // Particelle laser verdi
+particles.forEach(p => { p.update(); p.draw(); });
+
+// Pallini bianchi che convergono
+whiteParticles.forEach(p => { p.update(); p.draw(); });
+
+
     requestAnimationFrame(animate);
 }
+
+class WhiteParticle extends Particle {
+  reset() {
+    super.reset();
+    this.size = 1 + Math.random() * 2;
+    this.alpha = Math.random() * 0.6 + 0.4;
+    this.color = `rgba(255,255,255,`; // bianco
+  }
+}
+
+const whiteParticles = Array.from({ length: 80 }, () => new WhiteParticle());
+
 
 animate();

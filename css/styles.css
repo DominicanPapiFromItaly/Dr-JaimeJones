@@ -3473,9 +3473,16 @@ a {
 .why-hero-right {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* spinge il contenuto a destra */
   align-items: center;
 }
+
+.why-hero-right model-viewer {
+  width: 250px;   /* più piccolo */
+  height: 250px;
+  margin-right: 40px; /* lo sposta ancora più a destra */
+}
+
 
 .why-hero-pro {
   position: relative;

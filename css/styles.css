@@ -3512,13 +3512,13 @@ a {
 /* --- MOBILE --- */
 @media (max-width: 800px) {
   .why-hero-right {
-    justify-content: center; /* su mobile → centrato */
+    justify-content: flex-start; /* su mobile → spinge a sinistra */
   }
 
   .why-hero-right model-viewer {
-    width: 120px;   /* molto più piccolo */
-    height: 120px;
-    margin: 0;      /* niente margin, così resta dentro lo schermo */
+    width: 80px;   /* molto più piccolo */
+    height: 80px;
+    margin-left: 20px; /* piccolo margine per non attaccarlo al bordo */
     filter: drop-shadow(0 0 10px #10b981) drop-shadow(0 0 20px #34d399);
   }
 }

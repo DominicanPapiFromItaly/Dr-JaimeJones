@@ -3516,9 +3516,9 @@ a {
   }
 
   .why-hero-right model-viewer {
-    width: 140px;   /* molto più piccolo */
-    height: 140px;
-    margin: 0;      /* niente margin, così resta dentro lo schermo */
+    width: 120px;   /* molto più piccolo */
+    height: 120px;
+    margin-right: 50px;      /* niente margin, così resta dentro lo schermo */
     filter: drop-shadow(0 0 10px #10b981) drop-shadow(0 0 20px #34d399);
   }
 }

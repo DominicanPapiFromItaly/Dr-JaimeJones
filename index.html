@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dr. Jaime Jones W.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/Logo.png" alt="FEB Soluzioni Meccaniche" class="logo-img">
+      </a>
+    </div>
+
+    <nav class="header-actions">
+      <a href="index.html">HOME</a>
+      <a href="storia.html">SOBRE NOSOTROS</a>
+
+      <div class="nav-item-with-overlay">
+        <div class="nav-trigger">
+          <a href="#servizi">SERVICIOS</a>
+          <span class="nav-arrow"></span>
+        </div>
+
+        <div class="mega-overlay">
+          <ul>
+            <li><a href="compressori.html">Compressori</a></li>
+            <li><a href="pompe.html">Pompe</a></li>
+            <li><a href="riduttori.html">Riduttori</a></li>
+            <li><a href="valvole.html">Valvole</a></li>
+            <li><a href="turbine.html">Turbine</a></li>
+            <li><a href="ricambi.html">Ricambi macchinari industriali</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="perchè.html">PORQUÉ DECIDIR NOSOTROS</a>
+      <a href="#CONTATTI" onclick="toggleMenu()">CONTACTO</a>
+    </nav>
+
+    <div class="lang-switcher">
+      <a href="index.html">
+        <img src="assets/es.avif" alt="Italiano" class="lang-flag">
+      </a>
+      <span class="lang-arrow"></span>
+      <div class="lang-dropdown">
+        <a href="indexEN.html">
+          <img src="assets/gb.png" alt="English" class="lang-flag">
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+
+</header>
+
+<!-- MENU MOBILE -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="mobile-menu-header">
+    <img src="assets/Logo.png" class="mobile-menu-logo" alt="FEB">
+  </div>
+
+  <ul class="mobile-menu-links">
+    <li><a href="index.html">HOME <span>›</span></a></li>
+    <li><a href="storia.html">SOBRE NOSOTROS <span>›</span></a></li>
+    
+    <li class="mobile-dropdown">
+      <div class="mobile-trigger">
+        SERVICIOS
+        <span class="mobile-arrow" data-lucide="chevron-down"></span>
+      </div>
+
+      <ul class="mobile-submenu">
+        <li><a href="compressori.html">Compressori</a></li>
+        <li><a href="pompe.html">Pompe</a></li>
+        <li><a href="riduttori.html">Riduttori</a></li>
+        <li><a href="valvole.html">Valvole</a></li>
+        <li><a href="turbine.html">Turbine</a></li>
+        <li><a href="ricambi.html">Ricambi</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="perchè.html">PORQUÉ DECIDIR NOSOTROS <span>›</span></a></li>
+    <li><a href="#CONTATTI" onclick="toggleMenu()">CONTACTO<span>›</span></a></li>
+  </ul>
+</div>
+
+<!-- HERO IMAGE FULLSCREEN -->
+<section class="hero-video-section">
+
+  <!-- IMAGE HERO -->
+  <div class="hero-image">
+    <img src="assets/HERO.png" alt="Hero Dental Clinic">
+  </div>
+
+</section>
+
+<section class="about-tenaris-style reveal-section">
+
+  <div class="about-left">
+
+    <h2 class="about-title reveal-fade-up">
+      Bienvenido a la Clinica de Jaime Jones
+    </h2>
+
+    <div class="about-underline reveal-scale"></div>
+
+    <h3 class="about-subtitle reveal-fade-up">
+      Excelencia en odontología, cuidado personalizado y sonrisas duraderas
+    </h3>
+
+    <p class="about-description reveal-fade-up">
+      Desde hace más de 20 años cuidamos de nuestros pacientes con tratamientos odontológicos avanzados,
+      tecnologías de última generación y un enfoque humano basado en la confianza.
+      <br><br>
+            Estamos especializados en implantología, estética dental, ortodoncia invisible e higiene profesional.
+      Nuestro objetivo es simple: regalarte una sonrisa sana, bella y segura.
+    </p>
+
+    <div class="about-kpi-grid">
+
+      <div class="kpi-box reveal-fade-in">
+        <div class="kpi-number reveal-fade-in">20+</div>
+        <div class="kpi-label">años de experiencia</div>
+      </div>
+
+      <div class="kpi-box reveal-fade-in">
+        <div class="kpi-number reveal-fade-in">1000+</div>
+        <div class="kpi-label">pacientes satisfechos</div>
+      </div>
+
+      <div class="kpi-box reveal-fade-in">
+        <div class="kpi-number">24/7</div>
+        <div class="kpi-label">asistencia y urgencias dentales</div>
+      </div>
+
+      <div class="kpi-box reveal-fade-in">
+        <div class="kpi-number">99%</div>
+        <div class="kpi-label">tasa de éxito en implantes</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="about-right">
+    <img src="assets/about-fb.jpg" class="reveal-fade-left" alt="F&B Soluzioni Meccaniche - Team e impianti">
+  </div>
+
+</section>
+
+<section class="services-section reveal-section">
+
+  <h2 class="about-title reveal-fade-up">Servicios</h2>
+  <div class="about-underline reveal-scale"></div>
+
+  <div class="services-slider-wrapper">
+
+    <div class="services-slider">
+      <article class="service-card">
+        <img src="assets/CompressoreHome.png" alt="Compressori Industriali">
+        <h3>Compressori</h3>
+        <p>Soluzioni ad alte prestazioni per aria e gas compressi.</p>
+        <a href="compressori.html" class="service-link">Scopri di più →</a>
+      </article>
+
+      <article class="service-card">
+        <img src="assets/PompaHome.jpg" alt="Pompe Industriali">
+        <h3>Pompe</h3>
+        <p>Pompaggio industriale per fluidi critici e continuità operativa.</p>
+        <a href="pompe.html" class="service-link">Scopri di più →</a>
+      </article>
+
+      <article class="service-card">
+        <img src="assets/RiduttoriHome.jpg" alt="Riduttori Meccanici">
+        <h3>Riduttori</h3>
+        <p>Riduttori di precisione per applicazioni industriali complesse.</p>
+        <a href="riduttori.html" class="service-link">Scopri di più →</a>
+      </article>
+
+      <article class="service-card">
+        <img src="assets/ValvolaHome.jpg" alt="Valvole Industriali">
+        <h3>Valvole</h3>
+        <p>Valvole di controllo, sicurezza e regolazione per ogni impianto.</p>
+        <a href="valvole.html" class="service-link">Scopri di più →</a>
+      </article>
+
+      <article class="service-card">
+        <img src="assets/TurbinaHome.jpg" alt="Turbine Industriali">
+        <h3>Turbine</h3>
+        <p>Turbine industriali ad alta efficienza e sistemi rotanti.</p>
+        <a href="turbine.html" class="service-link">Scopri di più →</a>
+      </article>
+
+      <article class="service-card">
+        <img src="assets/RicambiHome.png" alt="Ricambi Industriali">
+        <h3>Ricambi Industriali</h3>
+        <p>Componenti certificati per ogni tipologia di macchinario.</p>
+        <a href="ricambi.html" class="service-link">Scopri di più →</a>
+      </article>
+    </div>
+
+  </div>
+
+  <div class="slider-dots"></div>
+
+</section>
+
+<section class="contact-wrapper" id="CONTATTI">
+
+  <!-- COLUMNA IZQUIERDA: CONTACTOS -->
+  <div class="contact-info">
+
+    <h2>Información de Contacto</h2>
+
+    <div class="info-block">
+      <i class="fas fa-map-marker-alt"></i>
+      <div>
+        <strong>Sede Principal</strong><br>
+        <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Dental+Dr.+Jaime+Jones+W/@19.2037945,-69.3386212,17z"
+           target="_blank">
+          Clínica Dental Dr. Jaime Jones W – Samaná, República Dominicana
+        </a>
+      </div>
+    </div>
+
+    <div class="info-block">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+18099447991" target="_blank">+1 809 944 7991</a>
+    </div>
+
+    <div class="info-block">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:info@clinicajaimejones.com" target="_blank">
+         joneswilmore@gmail.com
+      </a>
+    </div>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.968692969313!2d-69.3386212!3d19.2037945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaee1290843edfb%3A0x888fd870c3a78cd0!2sCl%C3%ADnica%20Dental%20Dr.%20Jaime%20Jones%20W!5e0!3m2!1ses!2sdo!4v1690599843559!5m2!1ses!2sdo" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <div class="contact-form premium">
+    <h2>Solicita Información</h2>
+
+    <form id="contactForm" action="mailto:joneswilmore@gmail.com?subject=Solicitud%20de%20información%20desde%20el%20sitio" 
+          method="POST" 
+          enctype="text/plain">
+
+      <div class="form-row">
+        <div class="form-field">
+          <input type="text" name="Nombre y Apellido" required>
+          <label>Nombre y Apellido</label>
+          <i class="fas fa-user"></i>
+        </div>
+
+        <div class="form-field">
+          <input type="email" name="Email" required>
+          <label>Correo Eletronico</label>
+          <i class="fas fa-envelope"></i>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <input type="text" name="Teléfono" required>
+          <label>Teléfono</label>
+          <i class="fas fa-phone"></i>
+        </div>
+
+        <div class="form-field">
+          <input type="text" name="Empresa">
+          <label>Trattamiento (opcional)</label>
+          <i class="fas fa-building"></i>
+        </div>
+      </div>
+
+      <div class="form-field textarea-field">
+        <textarea name="Mensaje" required></textarea>
+        <label>Mensaje</label>
+        <i class="fas fa-comment"></i>
+      </div>
+
+      <button type="submit" class="premium-btn">Enviar solicitud</button>
+
+    </form>
+
+    <p id="thankyou" class="thankyou-message">
+      Gracias por contactarnos.  
+      Tu solicitud ha sido recibida correctamente.  
+      Un responsable de nuestra clínica te responderá lo antes posible.
+    </p>
+  </div>
+
+</section>
+
+<div id="pageContent">
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <img src="assets/Footer.png" alt="FEB Soluzioni Meccaniche" class="footer-logo">
+
+      <p class="footer-copy">
+        © <span id="year"></span> Dr. Jaime Jones W.<br>
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <h4>CONTATTI</h4>
+
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        <strong>Estudio Odontologo</strong><br>
+        <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Dental+Dr.+Jaime+Jones+W/@19.2037945,-69.3386212,17z" target="_blank">
+          Clínica Dental Dr. Jaime Jones W – Samaná
+        </a>
+      </p>
+
+      <p><i class="fas fa-phone"></i><a href="tel:+390744800179">+1 809 944 7991</a></p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:febsrltr@pec.it">joneswilmore@gmail.com</a></p>
+
+    </div>
+
+  </div>
+</footer>
+
+</div>
+
+<!-- BOT FLOATING BUTTON -->
+<div id="fb-bot-button">
+  <i class="fas fa-robot"></i>
+</div>
+
+<!-- BOT WINDOW -->
+<div id="fb-bot-window">
+  <div id="fb-bot-header">
+  <span class="bot-title">ASSISTENTE AI DOTTOR JAIME</span>
+  <i id="fb-reset" class="fas fa-rotate-right"></i>
+</div>
+
+  <div id="fb-bot-messages">
+    <div class="bot-msg">
+      <p>Hola! Soy el Assistante AI Dottor Jaime, la puedo ayudar?</p>
+    </div>
+  </div>
+
+  <div id="fb-bot-input">
+    <input type="text" id="fb-user-input" placeholder="Scrivi qui il tuo messaggio...">
+    <button id="fb-send-btn">
+      <i data-lucide="send"></i>
+    </button>
+  </div>
+</div>
+
+<script src="js/appIT.js"></script>
+
+</body>
+</html>

@@ -3476,3 +3476,26 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.why-hero-pro {
+  position: relative;
+  overflow: hidden;
+}
+
+#why-hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* sfondo */
+}
+
+.why-hero-grid {
+  position: relative;
+  z-index: 1; /* contenuto sopra */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

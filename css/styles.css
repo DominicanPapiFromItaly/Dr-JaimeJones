@@ -3471,12 +3471,16 @@ a {
 }
 
 .why-hero-right {
-  .why-hero-right model-viewer {
-  width: 250px;
-  height: 250px;
-  margin-right: 120px; /* esagerato, lo spinge molto a destra */
-  filter: drop-shadow(0 0 15px #10b981) drop-shadow(0 0 30px #34d399);
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* spinge il contenuto a destra */
+  align-items: center;
 }
+
+.why-hero-right model-viewer {
+  width: 250px;   /* più piccolo */
+  height: 250px;
+  margin-right: 200px; /* lo sposta ancora più a destra */
 }
 
 .why-hero-pro {

@@ -73,18 +73,24 @@
       <p>Excellence in dentistry and personalized care.</p>
     </div>
     <div class="why-hero-right">
-      <model-viewer src="assets/teeth.glb"
-                    alt="3D Tooth"
-                    auto-rotate
-                    auto-rotate-delay="0"
-                    rotation-per-second="30deg"
-                    camera-controls
-                    shadow-intensity="1"
-                    style="width:250px; height:250px; background:transparent;">
-      </model-viewer>
+      <!-- 3D Tooth Model -->
+<model-viewer src="assets/teeth.glb"
+              alt="3D Tooth"
+              auto-rotate
+              auto-rotate-delay="0"   
+              rotation-per-second="30deg" 
+              camera-controls
+              shadow-intensity="1"
+              style="width:250px; height:250px; background:transparent;">
+</model-viewer>
+
     </div>
   </div>
 </section>
+
+<!-- Import model-viewer library -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 
 <!-- SERVICES CARDS -->
 <section class="why-cards">

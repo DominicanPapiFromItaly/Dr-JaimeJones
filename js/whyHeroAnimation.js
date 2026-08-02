@@ -105,12 +105,12 @@ class Particle {
 const particles = Array.from({ length: 220 }, () => new Particle());
 
 // --- LOOP DI ANIMAZIONE ---
+// --- LOOP DI ANIMAZIONE ---
 function animate() {
-    // Sfondo scuro verde notte con scia (motion blur)
     ctx.fillStyle = 'rgba(2, 18, 12, 0.09)';
     ctx.fillRect(0, 0, width, height);
 
-    // 1. Bagliore d'aura verde attorno al dente
+    // Aura verde pulsante
     const pulse = Math.sin(Date.now() * 0.003) * 15;
     const gradient = ctx.createRadialGradient(coreX, coreY, 10, coreX, coreY, 200 + pulse);
     gradient.addColorStop(0, 'rgba(52, 211, 153, 0.35)');
@@ -122,12 +122,11 @@ function animate() {
     ctx.arc(coreX, coreY, 200 + pulse, 0, Math.PI * 2);
     ctx.fill();
 
-    // 2. Particelle laser
+    // Particelle laser
     particles.forEach(p => { p.update(); p.draw(); });
 
-    // 3. Dente rotante al centro dell'aura
-    toothAngle += 0.02;
-    drawRotatingTooth(coreX, coreY, toothAngle);
+    // ❌ niente più drawRotatingTooth()
+    // toothAngle += 0.02;
 
     requestAnimationFrame(animate);
 }

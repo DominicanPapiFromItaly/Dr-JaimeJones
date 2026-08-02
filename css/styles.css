@@ -3513,8 +3513,8 @@ a {
   }
 
   .why-hero-right model-viewer {
-    width: 15px;   /* molto più piccolo */
-    height: 15px;
+    width: 8px;   /* molto più piccolo */
+    height: 8px;
     margin-left: -30px; /* piccolo margine per non attaccarlo al bordo */
     filter: drop-shadow(0 0 10px #10b981) drop-shadow(0 0 20px #34d399);
   }

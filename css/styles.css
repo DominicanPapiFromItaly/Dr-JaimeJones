@@ -1135,17 +1135,6 @@ a {
   align-items: center;
 }
 
-.why-hero-left h1 {
-  font-size: 48px;
-  font-weight: 800;
-  margin-bottom: 12px;
-}
-
-.why-hero-left p {
-  font-size: 20px;
-  color: #dce3eb;
-}
-
 /* Cerchio tecnico animato */
 .tech-circle {
   width: 260px;
@@ -1492,11 +1481,13 @@ a {
     font-size: 27px;
     line-height: 1.2;
     text-align: left; /* ← AGGIUNTO */
+    margin-left: -20px;
   }
 
   .why-hero-left p {
     font-size: 16px;
     text-align: left; /* ← AGGIUNTO */
+    margin-left: -20px;
   }
 
   .why-hero-grid {
@@ -3517,9 +3508,8 @@ a {
   }
 
   .why-hero-right model-viewer {
-    width: 80px;   /* molto più piccolo */
-    height: 80px;
-    margin-left: 20px; /* piccolo margine per non attaccarlo al bordo */
+    width: 65px;   /* molto più piccolo */
+    height: 65px;
     filter: drop-shadow(0 0 10px #10b981) drop-shadow(0 0 20px #34d399);
   }
 }

@@ -72,32 +72,30 @@ document.addEventListener("click", (e) => {
 /* ---------------------- */
 document.getElementById("year").textContent = new Date().getFullYear();
 
-
-
 const botBtn = document.getElementById("fb-bot-button");
 const botWindow = document.getElementById("fb-bot-window");
 const input = document.getElementById("fb-user-input");
 const sendBtn = document.getElementById("fb-send-btn");
 const messages = document.getElementById("fb-bot-messages");
 
-/* APRI/CHIUDI BOT */
+/* ABRIR/CERRAR BOT */
 botBtn.addEventListener("click", () => {
   botWindow.style.display = botWindow.style.display === "flex" ? "none" : "flex";
 });
 
-/* FUNZIONE: CREA SUGGERIMENTI */
+/* FUNCIÓN: CREAR SUGERENCIAS */
 function renderSuggestions() {
   const sug = document.createElement("div");
   sug.id = "fb-suggestions";
   sug.innerHTML = `
-      <div class="suggestion"><i class="fas fa-file-signature"></i> Richiedi preventivo</div>
-      <div class="suggestion"><i class="fas fa-phone"></i> Contatti</div>
-      <div class="suggestion"><i class="fas fa-cogs"></i> Prodotti & Servizi</div>
-      <div class="suggestion"><i class="fas fa-tools"></i> Assistenza Tecnica</div>
+      <div class="suggestion"><i class="fas fa-calendar-check"></i> Reservar cita</div>
+      <div class="suggestion"><i class="fas fa-tooth"></i> Servicios dentales</div>
+      <div class="suggestion"><i class="fas fa-smile"></i> Estética dental</div>
+      <div class="suggestion"><i class="fas fa-phone"></i> Contactar clínica</div>
   `;
   messages.appendChild(sug);
 
-  // Listener dei suggerimenti
+  // Listener de sugerencias
   sug.querySelectorAll(".suggestion").forEach(s => {
     s.addEventListener("click", () => {
       addUserMessage(s.textContent);
@@ -106,7 +104,7 @@ function renderSuggestions() {
   });
 }
 
-/* MOSTRA MESSAGGIO UTENTE (DESTRA) */
+/* MOSTRAR MENSAJE USUARIO (DERECHA) */
 function addUserMessage(text) {
   const div = document.createElement("div");
   div.className = "user-msg";
@@ -115,7 +113,7 @@ function addUserMessage(text) {
   messages.scrollTop = messages.scrollHeight;
 }
 
-/* MOSTRA MESSAGGIO BOT (SINISTRA) */
+/* MOSTRAR MENSAJE BOT (IZQUIERDA) */
 function addBotMessage(html) {
   const div = document.createElement("div");
   div.className = "bot-msg";
@@ -124,7 +122,7 @@ function addBotMessage(html) {
   messages.scrollTop = messages.scrollHeight;
 }
 
-/* INVIO MESSAGGIO */
+/* ENVÍO MENSAJE */
 sendBtn.addEventListener("click", sendMessage);
 input.addEventListener("keydown", e => {
   if (e.key === "Enter") sendMessage();
@@ -138,24 +136,35 @@ function sendMessage() {
   input.value = "";
 }
 
-/* RISPOSTE DEL BOT */
+/* RESPUESTAS DEL BOT */
 function replyFromAI(text) {
   setTimeout(() => {
     let response = "";
-
     const t = text.toLowerCase();
 
-    if (t.includes("contatti")) {
-      response = `Puoi trovare tutti i contatti qui:<br><a href="contatti.html">contatti.html</a>`;
+    if (t.includes("contactar")) {
+      response = `Puedes encontrar todos nuestros datos de contacto aquí:<br><a href="index.html#CONTATTI">Contacto</a>`;
     }
-    else if (t.includes("compressori")) {
-      response = `Ecco la sezione compressori:<br><a href="compressori.html">compressori.html</a>`;
+    else if (t.includes("cita")) {
+      response = `Para reservar una cita visita:<br><a href="index.html#CONTATTI">Cita</a>`;
     }
-    else if (t.includes("preventivo")) {
-      response = `Per richiedere un preventivo visita:<br><a href="preventivo.html">preventivo.html</a>`;
+    else if (t.includes("servicios")) {
+  response = `
+    Estos son nuestros principales servicios dentales:<br>
+    • <a href="implantes.html">Implantes Dentales</a><br>
+    • <a href="endodoncia.html">Endodoncia Avanzada</a><br>
+    • <a href="ortodoncia.html">Ortodoncia Moderna</a><br>
+    • <a href="protesis.html">Prótesis Dentales Personalizadas</a><br>
+    • <a href="estetica.html">Estética Dental</a><br>
+    • <a href="prevencion.html">Odontología Preventiva</a><br>
+  `;
+}
+
+    else if (t.includes("estética")) {
+      response = `Descubre más sobre estética dental:<br><a href="estetica.html">estetica.html</a>`;
     }
     else {
-      response = "Posso aiutarti con prodotti, servizi, contatti o assistenza tecnica.";
+      response = "Puedo ayudarte con citas, servicios dentales, estética o contactos de la clínica.";
     }
 
     addBotMessage(response);
@@ -165,14 +174,12 @@ function replyFromAI(text) {
 /* RESET CHAT */
 document.getElementById("fb-reset").addEventListener("click", () => {
   messages.innerHTML = "";
-
-  addBotMessage("Ciao! Sono F&B Assistant AI, come posso aiutarti?");
+  addBotMessage("Hola! Soy tu Asistente Dental AI, cómo puedo ayudarte hoy?");
   renderSuggestions();
 });
 
-/* AVVIO INIZIALE */
+/* INICIO */
 renderSuggestions();
-
 
 lucide.createIcons();
 

@@ -107,7 +107,6 @@ document.addEventListener("click", (e) => {
 /* ---------------------- */
 document.getElementById("year").textContent = new Date().getFullYear();
 
-
 const botBtn = document.getElementById("fb-bot-button");
 const botWindow = document.getElementById("fb-bot-window");
 const input = document.getElementById("fb-user-input");
@@ -119,18 +118,19 @@ botBtn.addEventListener("click", () => {
   botWindow.style.display = botWindow.style.display === "flex" ? "none" : "flex";
 });
 
-/* CREATE SUGGESTIONS */
+/* FUNCTION: CREATE SUGGESTIONS */
 function renderSuggestions() {
   const sug = document.createElement("div");
   sug.id = "fb-suggestions";
   sug.innerHTML = `
-      <div class="suggestion"><i class="fas fa-file-signature"></i> Request a Quote</div>
-      <div class="suggestion"><i class="fas fa-phone"></i> Contacts</div>
-      <div class="suggestion"><i class="fas fa-cogs"></i> Products & Services</div>
-      <div class="suggestion"><i class="fas fa-tools"></i> Technical Support</div>
+      <div class="suggestion"><i class="fas fa-calendar-check"></i> Book Appointment</div>
+      <div class="suggestion"><i class="fas fa-tooth"></i> Dental Services</div>
+      <div class="suggestion"><i class="fas fa-smile"></i> Cosmetic Dentistry</div>
+      <div class="suggestion"><i class="fas fa-phone"></i> Contact Clinic</div>
   `;
   messages.appendChild(sug);
 
+  // Suggestion listeners
   sug.querySelectorAll(".suggestion").forEach(s => {
     s.addEventListener("click", () => {
       addUserMessage(s.textContent);
@@ -139,7 +139,7 @@ function renderSuggestions() {
   });
 }
 
-/* USER MESSAGE (RIGHT) */
+/* SHOW USER MESSAGE (RIGHT) */
 function addUserMessage(text) {
   const div = document.createElement("div");
   div.className = "user-msg";
@@ -148,7 +148,7 @@ function addUserMessage(text) {
   messages.scrollTop = messages.scrollHeight;
 }
 
-/* BOT MESSAGE (LEFT) */
+/* SHOW BOT MESSAGE (LEFT) */
 function addBotMessage(html) {
   const div = document.createElement("div");
   div.className = "bot-msg";
@@ -177,17 +177,28 @@ function replyFromAI(text) {
     let response = "";
     const t = text.toLowerCase();
 
-    if (t.includes("contacts")) {
-      response = `You can find all contacts here:<br><a href="contatti.html">contatti.html</a>`;
+    if (t.includes("contact")) {
+      response = `You can find all our contact details here:<br><a href="indexEN.html#CONTATTI">Contact</a>`;
     }
-    else if (t.includes("compressors")) {
-      response = `Here is the compressors section:<br><a href="compressori.html">compressori.html</a>`;
+    else if (t.includes("appointment")) {
+      response = `To book an appointment please visit:<br><a href="indexEN.html#CONTATTI">Appointment</a>`;
     }
-    else if (t.includes("quote")) {
-      response = `To request a quote visit:<br><a href="preventivo.html">preventivo.html</a>`;
+    else if (t.includes("services")) {
+      response = `
+        These are our main dental services:<br>
+        • <a href="implantes.html">Dental Implants</a><br>
+        • <a href="endodoncia.html">Advanced Endodontics</a><br>
+        • <a href="ortodoncia.html">Modern Orthodontics</a><br>
+        • <a href="protesis.html">Customized Dental Prosthetics</a><br>
+        • <a href="estetica.html">Dental Aesthetics</a><br>
+        • <a href="prevencion.html">Preventive Dentistry</a><br>
+      `;
+    }
+    else if (t.includes("cosmetic")) {
+      response = `Learn more about cosmetic dentistry:<br><a href="estetica.html">estetica.html</a>`;
     }
     else {
-      response = "I can help you with products, services, contacts or technical support.";
+      response = "I can help you with appointments, dental services, cosmetic dentistry, or clinic contacts.";
     }
 
     addBotMessage(response);
@@ -197,12 +208,11 @@ function replyFromAI(text) {
 /* RESET CHAT */
 document.getElementById("fb-reset").addEventListener("click", () => {
   messages.innerHTML = "";
-
-  addBotMessage("Hello! I am F&B Assistant AI, how can I help you?");
+  addBotMessage("Hello! I am your Dental Assistant AI, how can I help you today?");
   renderSuggestions();
 });
 
-/* INITIAL LOAD */
+/* INITIAL START */
 renderSuggestions();
 
 lucide.createIcons();

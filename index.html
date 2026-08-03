@@ -104,9 +104,14 @@
 
   <!-- IMAGE HERO -->
   <div class="hero-image">
-    <img src="assets/HERO.png" alt="Hero Dental Clinic">
+    <picture>
+      <!-- Versión móvil -->
+      <source srcset="assets/HeroCell.png" media="(max-width: 768px)">
+      <!-- Versión escritorio -->
+      <img src="assets/HERO.png" alt="Clínica Dental Hero">
+    </picture>
 
-    <!-- Testo sovrapposto -->
+    <!-- Texto superpuesto -->
     <div class="hero-text">
       <h1>Sonrisas saludables, cuidado personalizado</h1>
       <p>Excelencia en odontología</p>

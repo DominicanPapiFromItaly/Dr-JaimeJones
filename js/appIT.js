@@ -379,3 +379,23 @@ window.addEventListener("scroll", () => {
     hero.classList.remove("parallax-active");
   }
 });
+
+// Animación simple de aparición
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".about-item");
+  items.forEach((item, i) => {
+    setTimeout(() => {
+      item.classList.add("visible");
+    }, i * 400);
+  });
+});
+
+// Animación simple de aparición
+document.addEventListener("DOMContentLoaded", () => {
+  const blocks = document.querySelectorAll(".story-block");
+  blocks.forEach((block, i) => {
+    setTimeout(() => {
+      block.classList.add("visible");
+    }, i * 500);
+  });
+});

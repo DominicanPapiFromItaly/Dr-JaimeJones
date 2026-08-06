@@ -3692,7 +3692,7 @@ a {
 .story-text h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #bfa14a;
+  color: var(--blue-header);
 }
 
 .story-text p {

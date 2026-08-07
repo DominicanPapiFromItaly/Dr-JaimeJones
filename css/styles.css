@@ -3727,3 +3727,36 @@ a {
     flex-direction: column;
   }
 }
+
+.implantes-dentales {
+  font-family: "Georgia", serif;
+  color: #222;
+}
+
+/* Testo overlay premium */
+.hero-text-Implantes {
+  position: absolute;
+  top: 50%;
+  left: 8%; /* spostato a sinistra */
+  transform: translateY(-50%);
+  text-align: left;
+  max-width: 500px;
+  color: #e6ffe6;
+  text-shadow: 0 3px 18px rgba(0,0,0,0.6);
+}
+
+.hero-text-Implantes h1 {
+  font-family: 'Playfair Display', serif; /* font premium */
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--blue-header-dark); /* verde brillante premium */
+  letter-spacing: 1px;
+}
+
+.hero-text-Implantes p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--blue-header-dark); /* verde chiaro elegante */
+}

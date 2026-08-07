@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dr. Jaime Jones W.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/Logo.png" alt="Clínica Dental Logo" class="logo-img">
+      </a>
+    </div>
+
+    <nav class="header-actions">
+      <a href="index.html">HOME</a>
+      <a href="storia.html">SOBRE NOSOTROS</a>
+      <div class="nav-item-with-overlay">
+        <div class="nav-trigger">
+          <a href="#servicios">SERVICIOS</a>
+          <span class="nav-arrow"></span>
+        </div>
+        <div class="mega-overlay">
+          <ul>
+            <li><a href="implantes.html">Implantes Dentales</a></li>
+            <li><a href="endodoncia.html">Endodoncia Avanzada</a></li>
+            <li><a href="ortodoncia.html">Ortodoncia Moderna</a></li>
+            <li><a href="protesis.html">Prótesis Dentales</a></li>
+            <li><a href="estetica.html">Estética Dental</a></li>
+            <li><a href="prevencion.html">Odontología Preventiva</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="perchè.html">PORQUÉ DECIDIRNOS</a>
+      <a href="#CONTATTI" onclick="toggleMenu()">CONTACTO</a>
+    </nav>
+
+    <div class="lang-switcher">
+      <a href="endodoncia.html">
+        <img src="assets/es.avif" alt="Español" class="lang-flag">
+      </a>
+      <span class="lang-arrow"></span>
+      <div class="lang-dropdown">
+        <a href="endodonciaEN.html">
+          <img src="assets/gb.png" alt="English" class="lang-flag">
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="mobile-menu-header">
+    <img src="assets/Logo.png" class="mobile-menu-logo" alt="Clinic Logo">
+  </div>
+  <ul class="mobile-menu-links">
+    <li><a href="index.html">HOME <span>›</span></a></li>
+    <li><a href="storia.html">SOBRE NOSOTROS <span>›</span></a></li>
+    <li class="mobile-dropdown">
+      <div class="mobile-trigger">
+        SERVICIOS
+        <span class="mobile-arrow" data-lucide="chevron-down"></span>
+      </div>
+      <ul class="mobile-submenu">
+        <li><a href="implantes.html">Implantes Dentales</a></li>
+        <li><a href="endodoncia.html">Endodoncia Avanzada</a></li>
+        <li><a href="ortodoncia.html">Ortodoncia Moderna</a></li>
+        <li><a href="protesis.html">Prótesis Dentales</a></li>
+        <li><a href="estetica.html">Estética Dental</a></li>
+        <li><a href="prevencion.html">Odontología Preventiva</a></li>
+      </ul>
+    </li>
+    <li><a href="perchè.html">PORQUÉ DECIDIRNOS <span>›</span></a></li>
+    <li><a href="#CONTATTI" onclick="toggleMenu()">CONTACTO<span>›</span></a></li>
+  </ul>
+</div>
+
+<section class="implantes-dentales">
+
+  <!-- HERO -->
+  <div class="hero-video-section">
+    <div class="hero-image">
+      <picture>
+        <source srcset="assets/Endodoncia.png" media="(max-width: 768px)">
+        <img src="assets/Endodoncia.png" alt="Endodoncia Avanzada Hero">
+      </picture>
+      <div class="hero-text-Implantes">
+        <h1>Endodoncia Avanzada</h1>
+        <p>Tratamientos de conducto con máxima precisión y tecnología moderna</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>¿Qué es la endodoncia avanzada?</h2>
+      <p>
+        La endodoncia avanzada es el tratamiento que permite salvar dientes dañados o infectados 
+        mediante la limpieza y sellado de los conductos radiculares. Gracias a la tecnología moderna 
+        y especialistas certificados, ofrecemos procedimientos seguros y efectivos.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-general.png" alt="Endodoncia general">
+    </div>
+  </div>
+
+  <!-- TIPO 1 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Endodoncia Convencional</h2>
+      <p>
+        Tratamiento de conducto para eliminar infección y salvar el diente. Incluye limpieza, 
+        desinfección y sellado hermético del conducto radicular.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-convencional.png" alt="Endodoncia convencional">
+    </div>
+  </div>
+
+  <!-- TIPO 2 -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>Retratamiento Endodóntico</h2>
+      <p>
+        Corrección de tratamientos previos que no tuvieron éxito. Se elimina la obturación defectuosa 
+        y se realiza un nuevo sellado con técnicas modernas.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-retratamiento.png" alt="Retratamiento endodóntico">
+    </div>
+  </div>
+
+  <!-- TIPO 3 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Endodoncia Quirúrgica (Apicectomía)</h2>
+      <p>
+        Procedimiento quirúrgico para tratar infecciones persistentes en la raíz. Se accede al ápice 
+        y se reseca el tejido infectado, conservando el diente.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-quirurgica.png" alt="Endodoncia quirúrgica">
+    </div>
+  </div>
+
+  <!-- TIPO 4 -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>Endodoncia en Dientes Multirradiculares</h2>
+      <p>
+        Tratamiento especializado en molares con múltiples raíces y conductos. Se utilizan técnicas 
+        avanzadas y microscopio dental para localizar todos los conductos.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-multirradicular.png" alt="Endodoncia en dientes multirradiculares">
+    </div>
+  </div>
+
+  <!-- TIPO 5 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Endodoncia con Microscopio</h2>
+      <p>
+        Tratamientos realizados con magnificación para máxima precisión. Permite detectar conductos 
+        ocultos y mejorar el éxito clínico.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-microscopio.png" alt="Endodoncia con microscopio">
+    </div>
+  </div>
+
+   <!-- TIPO 6 -->
+<div class="story-block">
+  <div class="story-text">
+    <h2>Dra. Leslie Estrella</h2>
+    <p>
+      La Dra. Leslie Estrella es reconocida por su dedicación y excelencia en el campo de la endodoncia. 
+      Con una amplia experiencia en el tratamiento de molares con múltiples raíces y conductos, aplica 
+      técnicas avanzadas y utiliza microscopio dental de última generación para garantizar precisión, 
+      seguridad y resultados duraderos. Su compromiso con cada paciente asegura una atención cercana 
+      y personalizada, devolviendo salud y confianza a cada sonrisa.
+    </p>
+  </div>
+  <div class="story-image luxury">
+    <img src="assets/Leslie.png" alt="Endodoncia en dientes multirradiculares">
+  </div>
+</div>
+
+</section>
+
+<div id="pageContent">
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <img src="assets/Footer.png" alt="FEB Soluzioni Meccaniche" class="footer-logo">
+
+      <p class="footer-copy">
+        © <span id="year"></span> Dr. Jaime Jones W.<br>
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <h4>CONTACTOS</h4>
+
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        <strong>Estudio Odontologo</strong><br>
+        <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Dental+Dr.+Jaime+Jones+W/@19.2037945,-69.3386212,17z" target="_blank">
+          Clínica Dental Dr. Jaime Jones W – Samaná
+        </a>
+      </p>
+
+      <p><i class="fas fa-phone"></i><a href="tel:+390744800179">+1 809 944 7991</a></p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:clinicadentaljaimejones@gmail.com">clinicadentaljaimejones@gmail.com</a></p>
+
+    </div>
+
+  </div>
+</footer>
+
+</div>
+
+<!-- BOT FLOATING BUTTON -->
+<div id="fb-bot-button">
+  <i class="fas fa-robot"></i>
+</div>
+
+<!-- BOT WINDOW -->
+<div id="fb-bot-window">
+  <div id="fb-bot-header">
+  <span class="bot-title">F&B Assistant AI</span>
+  <i id="fb-reset" class="fas fa-rotate-right"></i>
+</div>
+
+  <div id="fb-bot-messages">
+    <div class="bot-msg">
+      <p>Ciao! Sono F&B Assistant AI, come posso aiutarti?</p>
+    </div>
+  </div>
+
+  <div id="fb-bot-input">
+    <input type="text" id="fb-user-input" placeholder="Scrivi qui il tuo messaggio...">
+    <button id="fb-send-btn">
+      <i data-lucide="send"></i>
+    </button>
+  </div>
+</div>
+
+<script src="js/appIT.js"></script>
+
+</body>
+</html>

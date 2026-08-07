@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dr. Jaime Jones W.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <div class="logo">
+      <a href="indexEN.html">
+        <img src="assets/Logo.png" alt="FEB Mechanical Solutions" class="logo-img">
+      </a>
+    </div>
+
+    <nav class="header-actions">
+      <a href="indexEN.html">HOME</a>
+      <a href="storiaEN.html">ABOUT US</a>
+
+      <div class="nav-item-with-overlay">
+        <div class="nav-trigger">
+          <a href="#services">SERVICES</a>
+          <span class="nav-arrow"></span>
+        </div>
+
+        <div class="mega-overlay">
+          <ul>
+            <li><a href="implantesEN.html">Dental Implants</a></li>
+            <li><a href="endodonciaEN.html">Advanced Endodontics</a></li>
+            <li><a href="ortodonciaEN.html">Modern Orthodontics</a></li>
+            <li><a href="protesisEN.html">Dental Prosthetics</a></li>
+            <li><a href="esteticaEN.html">Dental Aesthetics</a></li>
+            <li><a href="prevencionEN.html">Preventive Dentistry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="percheEN.html">WHY CHOOSE US</a>
+      <a href="#CONTATTI" onclick="toggleMenu()">CONTACT</a>
+</nav>
+
+
+    <div class="lang-switcher">
+      <a href="endodonciaEN.html">
+        <img src="assets/gb.png" alt="Italiano" class="lang-flag">
+      </a>
+      <span class="lang-arrow"></span>
+      <div class="lang-dropdown">
+        <a href="endodoncia.html">
+          <img src="assets/es.avif" alt="English" class="lang-flag">
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="mobile-menu-header">
+    <img src="assets/Logo.png" class="mobile-menu-logo" alt="FEB">
+  </div>
+
+  <ul class="mobile-menu-links">
+    <li><a href="indexEN.html">HOME <span>›</span></a></li>
+    <li><a href="storiaEN.html">ABOUT US <span>›</span></a></li>
+    
+    <li class="mobile-dropdown">
+      <div class="mobile-trigger">
+        SERVICES
+        <span class="mobile-arrow" data-lucide="chevron-down"></span>
+      </div>
+
+      <ul class="mobile-submenu">
+        <li><a href="implantesEN.html">Dental Implants</a></li>
+        <li><a href="endodonciaEN.html">Advanced Endodontics</a></li>
+        <li><a href="ortodonciaEN.html">Modern Orthodontics</a></li>
+        <li><a href="protesisEN.html">Dental Prosthetics</a></li>
+        <li><a href="esteticaEN.html">Dental Aesthetics</a></li>
+        <li><a href="prevencionEN.html">Preventive Dentistry</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="percheEN.html">WHY CHOOSE US <span>›</span></a></li>
+    <li><a href="#CONTATTI" onclick="toggleMenu()">CONTACT <span>›</span></a></li>
+  </ul>
+</div>
+
+<section class="implantes-dentales">
+
+  <!-- HERO -->
+  <div class="hero-video-section">
+    <div class="hero-image">
+      <picture>
+        <source srcset="assets/Endodoncia.png" media="(max-width: 768px)">
+        <img src="assets/Endodoncia.png" alt="Advanced Endodontics Hero">
+      </picture>
+      <div class="hero-text-Implantes">
+        <h1>Advanced Endodontics</h1>
+        <p>Root canal treatments with maximum precision and modern technology</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>What is advanced endodontics?</h2>
+      <p>
+        Advanced endodontics is the treatment that allows saving damaged or infected teeth 
+        through cleaning and sealing of the root canals. Thanks to modern technology 
+        and certified specialists, we provide safe and effective procedures.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-general.png" alt="General endodontics">
+    </div>
+  </div>
+
+  <!-- TIPO 1 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Conventional Endodontics</h2>
+      <p>
+        Root canal treatment to eliminate infection and save the tooth. Includes cleaning, 
+        disinfection, and hermetic sealing of the root canal.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-convencional.png" alt="Conventional endodontics">
+    </div>
+  </div>
+
+  <!-- TIPO 2 -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>Endodontic Retreatment</h2>
+      <p>
+        Correction of previous treatments that were not successful. The defective filling 
+        is removed and a new sealing is performed with modern techniques.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-retratamiento.png" alt="Endodontic retreatment">
+    </div>
+  </div>
+
+  <!-- TIPO 3 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Surgical Endodontics (Apicoectomy)</h2>
+      <p>
+        Surgical procedure to treat persistent infections in the root. The apex is accessed 
+        and the infected tissue is resected, preserving the tooth.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-quirurgica.png" alt="Surgical endodontics">
+    </div>
+  </div>
+
+  <!-- TIPO 4 -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>Endodontics in Multirooted Teeth</h2>
+      <p>
+        Specialized treatment for molars with multiple roots and canals. Advanced techniques 
+        and dental microscope are used to locate all canals.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-multirradicular.png" alt="Endodontics in multirooted teeth">
+    </div>
+  </div>
+
+  <!-- TIPO 5 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Endodontics with Microscope</h2>
+      <p>
+        Treatments performed with magnification for maximum precision. Allows detection of 
+        hidden canals and improves clinical success.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/endodoncia-microscopio.png" alt="Endodontics with microscope">
+    </div>
+  </div>
+
+  <!-- TIPO 6 -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>Dr. Leslie Estrella</h2>
+      <p>
+        Dr. Leslie Estrella is recognized for her dedication and excellence in the field of endodontics. 
+        With extensive experience in treating molars with multiple roots and canals, she applies 
+        advanced techniques and uses state-of-the-art dental microscopes to ensure precision, 
+        safety, and long-lasting results. Her commitment to each patient guarantees close and 
+        personalized care, restoring health and confidence to every smile.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/Leslie.png" alt="Endodontics in multirooted teeth">
+    </div>
+  </div>
+
+</section>
+
+<div id="pageContent">
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <img src="assets/Footer.png" alt="FEB Soluzioni Meccaniche" class="footer-logo">
+
+      <p class="footer-copy">
+        © <span id="year"></span> Dr. Jaime Jones W.<br>
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <h4>CONTACTS</h4>
+
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        <strong>Dental Clinic</strong><br>
+        <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Dental+Dr.+Jaime+Jones+W/@19.2037945,-69.3386212,17z" target="_blank">
+          Clínica Dental Dr. Jaime Jones W – Samaná
+        </a>
+      </p>
+
+      <p><i class="fas fa-phone"></i><a href="tel:+390744800179">+1 809 944 7991</a></p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:clinicadentaljaimejones@gmail.com">clinicadentaljaimejones@gmail.com</a></p>
+
+    </div>
+
+  </div>
+</footer>
+
+</div>
+
+<!-- BOT FLOATING BUTTON -->
+<div id="fb-bot-button">
+  <i class="fas fa-robot"></i>
+</div>
+
+<!-- BOT WINDOW -->
+<div id="fb-bot-window">
+  <div id="fb-bot-header">
+  <span class="bot-title">F&B Assistant AI</span>
+  <i id="fb-reset" class="fas fa-rotate-right"></i>
+</div>
+
+  <div id="fb-bot-messages">
+    <div class="bot-msg">
+      <p>Ciao! Sono F&B Assistant AI, come posso aiutarti?</p>
+    </div>
+  </div>
+
+  <div id="fb-bot-input">
+    <input type="text" id="fb-user-input" placeholder="Scrivi qui il tuo messaggio...">
+    <button id="fb-send-btn">
+      <i data-lucide="send"></i>
+    </button>
+  </div>
+</div>
+
+<script src="js/appIT.js"></script>
+
+</body>
+</html>

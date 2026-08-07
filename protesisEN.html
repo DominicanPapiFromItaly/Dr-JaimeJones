@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dr. Jaime Jones W.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+
+    <div class="logo">
+      <a href="indexEN.html">
+        <img src="assets/Logo.png" alt="FEB Soluzioni Meccaniche" class="logo-img">
+      </a>
+    </div>
+
+    <nav class="header-actions">
+      <a href="indexEN.html">HOME</a>
+      <a href="storiaEN.html">ABOUT US</a>
+
+      <div class="nav-item-with-overlay">
+        <div class="nav-trigger">
+          <a href="#services">SERVICES</a>
+          <span class="nav-arrow"></span>
+        </div>
+
+        <div class="mega-overlay">
+          <ul>
+            <li><a href="implants.html">Dental Implants</a></li>
+            <li><a href="endodontics.html">Advanced Endodontics</a></li>
+            <li><a href="orthodontics.html">Modern Orthodontics</a></li>
+            <li><a href="prosthetics.html">Dental Prosthetics</a></li>
+            <li><a href="aesthetics.html">Dental Aesthetics</a></li>
+            <li><a href="prevention.html">Preventive Dentistry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="why.html">WHY CHOOSE US</a>
+      <a href="#CONTACT" onclick="toggleMenu()">CONTACT</a>
+    </nav>
+
+    <div class="lang-switcher">
+      <a href="storiaEN.html">
+        <img src="assets/gb.png" alt="Italiano" class="lang-flag">
+      </a>
+      <span class="lang-arrow"></span>
+      <div class="lang-dropdown">
+        <a href="storia.html">
+          <img src="assets/es.avif" alt="English" class="lang-flag">
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="mobile-menu-header">
+    <img src="assets/Logo.png" class="mobile-menu-logo" alt="Clinic Logo">
+  </div>
+
+  <ul class="mobile-menu-links">
+    <li><a href="indexEN.html">HOME <span>›</span></a></li>
+    <li><a href="storiaEN.html">ABOUT US <span>›</span></a></li>
+    
+    <li class="mobile-dropdown">
+      <div class="mobile-trigger">
+        SERVICES
+        <span class="mobile-arrow" data-lucide="chevron-down"></span>
+      </div>
+
+      <ul class="mobile-submenu">
+        <li><a href="implants.html">Dental Implants</a></li>
+        <li><a href="endodontics.html">Advanced Endodontics</a></li>
+        <li><a href="orthodontics.html">Modern Orthodontics</a></li>
+        <li><a href="prosthetics.html">Dental Prosthetics</a></li>
+        <li><a href="aesthetics.html">Dental Aesthetics</a></li>
+        <li><a href="prevention.html">Preventive Dentistry</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="percheEN.html">WHY CHOOSE US <span>›</span></a></li>
+    <li><a href="indexEN.html#CONTATTI" onclick="toggleMenu()">CONTACT<span>›</span></a></li>
+  </ul>
+</div>
+
+<section class="implantes-dentales">
+
+  <!-- HERO -->
+  <div class="hero-video-section">
+    <div class="hero-image">
+      <picture>
+        <source srcset="assets/Protesis.png" media="(max-width: 768px)">
+        <img src="assets/Protesis.png" alt="Customized Dental Prosthetics Hero">
+      </picture>
+      <div class="hero-text-Implantes">
+        <h1>Customized Dental Prosthetics</h1>
+        <p>Advanced solutions to restore function and aesthetics</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>What are customized dental prosthetics?</h2>
+      <p>
+        Customized dental prosthetics allow the replacement of missing or damaged teeth 
+        with solutions tailored to each patient. Thanks to modern materials and innovative 
+        techniques, we provide treatments that restore chewing function and aesthetics 
+        safely and durably.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/protesis-general.png" alt="General dental prosthetics">
+    </div>
+  </div>
+
+  <!-- TIPO 1 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Fixed Prosthetics</h2>
+      <p>
+        Crowns and bridges cemented onto natural teeth or implants. 
+        They offer stability, aesthetics, and a long-lasting solution for replacing teeth.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/protesis-fijas.png" alt="Fixed prosthetics">
+    </div>
+  </div>
+
+  <!-- TIPO 2 -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>Removable Prosthetics</h2>
+      <p>
+        Partial or complete dentures that can be easily removed. 
+        A practical and economical option to restore function and a natural smile.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/protesis-removibles.png" alt="Removable prosthetics">
+    </div>
+  </div>
+
+  <!-- TIPO 3 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Implant-Supported Prosthetics</h2>
+      <p>
+        Advanced solutions that combine dental implants with fixed or removable prosthetics. 
+        They guarantee maximum stability, comfort, and superior aesthetic results.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/protesis-implantes.jpg" alt="Implant-supported prosthetics">
+    </div>
+  </div>
+
+  <!-- TIPO 4 -->
+  <div class="story-block">
+    <div class="story-text">
+      <h2>Aesthetic Prosthetics</h2>
+      <p>
+        Designed to enhance the appearance of the smile, using high-quality materials 
+        that perfectly mimic the natural look of teeth.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/protesis-esteticas.png" alt="Aesthetic prosthetics">
+    </div>
+  </div>
+
+  <!-- TIPO 5 -->
+  <div class="story-block reverse">
+    <div class="story-text">
+      <h2>Flexible Prosthetics</h2>
+      <p>
+        Made with lightweight and resistant materials, they offer greater comfort and 
+        adaptability for the patient, serving as a modern alternative to traditional prosthetics.
+      </p>
+    </div>
+    <div class="story-image luxury">
+      <img src="assets/protesis-flexibles.jpg" alt="Flexible prosthetics">
+    </div>
+  </div>
+
+</section>
+
+<div id="pageContent">
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <img src="assets/Footer.png" alt="FEB Soluzioni Meccaniche" class="footer-logo">
+
+      <p class="footer-copy">
+        © <span id="year"></span> Dr. Jaime Jones W.<br>
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <h4>CONTACTS</h4>
+
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        <strong>Dental Clinic</strong><br>
+        <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Dental+Dr.+Jaime+Jones+W/@19.2037945,-69.3386212,17z" target="_blank">
+          Clínica Dental Dr. Jaime Jones W – Samaná
+        </a>
+      </p>
+
+      <p><i class="fas fa-phone"></i><a href="tel:+390744800179">+1 809 944 7991</a></p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:clinicadentaljaimejones@gmail.com">clinicadentaljaimejones@gmail.com</a></p>
+
+    </div>
+
+  </div>
+</footer>
+
+</div>
+
+<!-- BOT FLOATING BUTTON -->
+<div id="fb-bot-button">
+  <i class="fas fa-robot"></i>
+</div>
+
+<!-- BOT WINDOW -->
+<div id="fb-bot-window">
+  <div id="fb-bot-header">
+  <span class="bot-title">F&B Assistant AI</span>
+  <i id="fb-reset" class="fas fa-rotate-right"></i>
+</div>
+
+  <div id="fb-bot-messages">
+    <div class="bot-msg">
+      <p>Ciao! Sono F&B Assistant AI, come posso aiutarti?</p>
+    </div>
+  </div>
+
+  <div id="fb-bot-input">
+    <input type="text" id="fb-user-input" placeholder="Scrivi qui il tuo messaggio...">
+    <button id="fb-send-btn">
+      <i data-lucide="send"></i>
+    </button>
+  </div>
+</div>
+
+<script src="js/appIT.js"></script>
+
+</body>
+</html>

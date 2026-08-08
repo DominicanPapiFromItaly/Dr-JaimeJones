@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/</loc>
+  <priority>1.0</priority>
+</url>
+
+<!-- Endodoncia -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/endodoncia.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/endodonciaEN.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<!-- Estética -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/estetica.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/esteticaEN.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<!-- Implantes -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/implantes.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/implantesEN.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<!-- Ortodoncia -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/ortodoncia.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/ortodonciaEN.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<!-- Prevención -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/prevencion.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/prevencionEN.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<!-- Prótesis -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/protesis.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/protesisEN.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<!-- Storia -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/storia.html</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/storiaEN.html</loc>
+  <priority>0.7</priority>
+</url>
+
+<!-- Perché -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/perchè.html</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/percheEN.html</loc>
+  <priority>0.7</priority>
+</url>
+
+<!-- Index EN -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/indexEN.html</loc>
+  <priority>0.9</priority>
+</url>
+
+<!-- Sitemap -->
+<url>
+  <loc>https://dr-jaime-jones.vercel.app/sitemap.html</loc>
+  <priority>0.6</priority>
+</url>
+
+</urlset>

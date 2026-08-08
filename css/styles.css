@@ -79,11 +79,12 @@ a {
 }
 
 .logo-img {
-  height: 140px;   /* più grande */
+  height: 100px;   /* più grande */
   width: auto;
   display: block;
   flex-shrink: 0;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 /* NAV */
